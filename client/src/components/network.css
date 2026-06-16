@@ -1,0 +1,44 @@
+.metro-map {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Arial;
+}
+
+.segment {
+  border: 2px solid #ccc;
+  border-left: 6px solid #999;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+  transition: 0.2s;
+}
+
+.segment:hover {
+  transform: scale(1.01);
+  background: #f8f9fa;
+}
+
+.segment.selected {
+  background: #e8f4ff;
+  border-color: #0d6efd;
+}
+
+.segment-main {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.segment-meta {
+  margin-top: 6px;
+  display: flex;
+  gap: 6px;
+}
+
+.line-badge {
+  padding: 2px 8px;
+  border-radius: 20px;
+  color: white;
+  font-size: 11px;
+}
